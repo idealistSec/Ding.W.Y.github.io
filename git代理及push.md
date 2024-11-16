@@ -35,6 +35,8 @@ git commit -m “first commit”      //添加文件描述信息
 git remote add origin  远程仓库地址 //链接远程仓库 
 
 // 把本地仓库的变化连接到远程仓库master分支
-git pull origin master 
+git pull origin master --allow-unrelated-histories)//括号的内容可加可不加
+//或者上一步不用这句也行，可以用这个,强制push：
+git push --force origin master
 git push -u origin master        //把本地仓库的文件推送到远程仓库master分支
 ```
